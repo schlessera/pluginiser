@@ -1,0 +1,22 @@
+{
+    "name": "schlessera/pluginiser",
+    "description": "Create a pseudo-plugin that can be edited through the WP file editor",
+    "type": "wp-cli-package",
+    "homepage": "https://github.com/schlessera/pluginiser",
+    "license": "MIT",
+    "authors": [],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "WP_CLI\\Pluginiser\\": "src/"
+        },
+        "files": [ "command.php" ]
+    },
+    "require": {
+        "wp-cli/wp-cli": "1.5"
+    },
+    "require-dev": {
+        "behat/behat": "~2.5"
+    }
+}
