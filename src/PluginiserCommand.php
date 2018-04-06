@@ -24,7 +24,7 @@ class PluginiserCommand extends WP_CLI_Command {
 	 * ## OPTIONS
 	 *
 	 * <slug>
-	 * Slug of the plugin to create.
+	 * : Slug of the plugin to create.
 	 *
 	 * ## EXAMPLES
 	 *
@@ -60,10 +60,10 @@ class PluginiserCommand extends WP_CLI_Command {
 	 * ## OPTIONS
 	 *
 	 * <plugin>
-	 * Slug of the plugin to add a file to.
+	 * : Slug of the plugin to add a file to.
 	 *
 	 * <filepath>
-	 * Path and file name for the file to add. The path should be relative to
+	 * : Path and file name for the file to add. The path should be relative to
 	 * the plugin root.
 	 *
 	 * ## EXAMPLES

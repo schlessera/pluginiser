@@ -16,7 +16,7 @@ This package implements the following commands:
 Creates an empty plugin.
 
 ~~~
-wp pluginiser create 
+wp pluginiser create <slug>
 ~~~
 
 Creates the folder for a new empty plugin and adds a placeholder file
@@ -25,8 +25,8 @@ recognized within the WordPress file editor.
 
 **OPTIONS**
 
-<slug>
-Slug of the plugin to create.
+	<slug>
+		Slug of the plugin to create.
 
 **EXAMPLES**
 
@@ -40,7 +40,7 @@ Success: Created plugin folder for plugin: "my-plugin"
 Adds a file to a plugin.
 
 ~~~
-wp pluginiser add-file 
+wp pluginiser add-file <plugin> <filepath>
 ~~~
 
 Adds a new empty file to a given plugin. You can include subfolders in
@@ -48,12 +48,12 @@ the file path that are relative to the plugin's root folder.
 
 **OPTIONS**
 
-<plugin>
-Slug of the plugin to add a file to.
+	<plugin>
+		Slug of the plugin to add a file to.
 
-<filepath>
-Path and file name for the file to add. The path should be relative to
-the plugin root.
+	<filepath>
+		Path and file name for the file to add. The path should be relative to
+		the plugin root.
 
 **EXAMPLES**
 
