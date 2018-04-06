@@ -9,7 +9,35 @@ Quick links: [Using](#using) | [Installing](#installing) | [Contributing](#contr
 
 ## Using
 
+This package implements the following commands:
 
+### wp pluginiser create
+
+Create an empty plugin.
+
+~~~
+wp pluginiser create 
+~~~
+
+<slug>
+Slug of the plugin to create.
+
+
+
+### wp pluginiser add-file
+
+Add a file to a plugin.
+
+~~~
+wp pluginiser add-file 
+~~~
+
+<plugin>
+Slug of the plugin to add a file to.
+
+<filepath>
+Path and file name for the file to add. The patn should be relative to
+the plugin root.
 
 ## Installing
 

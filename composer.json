@@ -18,5 +18,11 @@
     },
     "require-dev": {
         "behat/behat": "~2.5"
+    },
+    "extra": {
+        "commands": [
+            "pluginiser create",
+            "pluginiser add-file"
+        ]
     }
 }
