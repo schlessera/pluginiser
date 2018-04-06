@@ -90,6 +90,21 @@ class PluginFileCollection {
 	}
 
 	/**
+	 * Initialize an empty folder to be recognized as a plugin.
+	 *
+	 * @return bool Whether creation of the plugin header file succeeded.
+	 */
+	public function init_plugin() {
+		return (bool) $this->filesystem->put_contents(
+			$this->folder . $this->slug . '.php',
+			'<?php' . PHP_EOL
+			. '/*' . PHP_EOL
+			. ' * Plugin Name: ' . $this->slug . PHP_EOL
+			. ' */' . PHP_EOL
+		);
+	}
+
+	/**
 	 * Get the absolute folder name of the plugin.
 	 *
 	 * @return string Absolute folder of the plugin.
