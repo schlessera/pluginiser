@@ -13,31 +13,52 @@ This package implements the following commands:
 
 ### wp pluginiser create
 
-Create an empty plugin.
+Creates an empty plugin.
 
 ~~~
 wp pluginiser create 
 ~~~
 
+Creates the folder for a new empty plugin and adds a placeholder file
+that contains basic plugin meta header information so that it is
+recognized within the WordPress file editor.
+
+**OPTIONS**
+
 <slug>
 Slug of the plugin to create.
+
+**EXAMPLES**
+
+$ wp pluginiser create my-plugin
+Success: Created plugin folder for plugin: "my-plugin"
 
 
 
 ### wp pluginiser add-file
 
-Add a file to a plugin.
+Adds a file to a plugin.
 
 ~~~
 wp pluginiser add-file 
 ~~~
 
+Adds a new empty file to a given plugin. You can include subfolders in
+the file path that are relative to the plugin's root folder.
+
+**OPTIONS**
+
 <plugin>
 Slug of the plugin to add a file to.
 
 <filepath>
-Path and file name for the file to add. The patn should be relative to
+Path and file name for the file to add. The path should be relative to
 the plugin root.
+
+**EXAMPLES**
+
+$ wp pluginiser add-file my-plugin subfolder/test-file.php
+Success: Created file "subfolder/test-file.php"
 
 ## Installing
 
